@@ -101,18 +101,19 @@
 
         <section id="ads-and-ai" class="doc-section">
           <h2>4. Ads, AI, and third-party services</h2>
+          <p>Interna may share or transmit relevant data to third-party service providers when those services are needed to operate app features, process AI generation, show rewarded ads, protect against abuse, or maintain service reliability.</p>
           <div class="service-list">
             <div class="service-item">
               <h3>Supabase</h3>
-              <p>Interna uses Supabase Edge Functions and related backend services for AI requests, reward-credit handling, and trust or quota enforcement.</p>
+              <p>Relevant app data may be shared with or processed by Supabase for backend AI requests, reward-credit handling, quota enforcement, diagnostics, and abuse prevention.</p>
             </div>
             <div class="service-item">
               <h3>OpenRouter and Google Gemini</h3>
-              <p>When AI narrative generation is used, prompt content may include user-entered profile details and work-log data so a narrative can be generated. These requests may be processed by OpenRouter or Google Gemini through the app's backend flow.</p>
+              <p>When AI narrative generation is used, prompt content may include user-entered profile details and work-log data so a narrative can be generated. These requests may be shared with or processed by OpenRouter and/or Google Gemini through the app's backend flow.</p>
             </div>
             <div class="service-item">
               <h3>Google Mobile Ads (AdMob)</h3>
-              <p>Interna uses AdMob for rewarded ads. Depending on SDK behavior and Google's systems, this may involve diagnostics, app interaction data, device or other identifiers, and conservative approximate-location handling derived from network or SDK context. Interna does not provide a user-facing precise-location feature.</p>
+              <p>Interna uses Google Mobile Ads (AdMob) for rewarded ads. When ads are shown, relevant data may be shared with or processed by AdMob. Depending on SDK behavior and Google's systems, this may involve diagnostics, app interaction data, device or other identifiers, and conservative approximate-location handling derived from network or SDK context. Interna does not provide a user-facing precise-location feature.</p>
             </div>
           </div>
         </section>
@@ -120,6 +121,7 @@
         <section id="device-trust" class="doc-section">
           <h2>5. Device trust and anti-abuse protections</h2>
           <p>Interna uses technical signals to reduce abuse of AI generation and rewarded credits. On supported Android builds, this may include Play Integrity verification, device-trust data, install identifiers, Android-specific identifiers, and request-specific trust metadata.</p>
+          <p>Backend anti-abuse systems may process install identifiers, Android or device identifiers, request metadata, and hashed or derived network/IP-related signals to help detect suspicious usage and protect service limits.</p>
           <p>These protections are used to detect suspicious reinstall patterns, repeated abuse attempts, and invalid rewarded-credit claims. This system does not require account creation or login.</p>
         </section>
 
@@ -150,14 +152,10 @@
 
         <section id="contact" class="doc-section">
           <h2>10. Privacy contact</h2>
-          <div class="terminal-block">
-            <div class="terminal-header">
-              <span>contact.sh</span>
-            </div>
-            <div class="terminal-body">
-              <span class="prompt">$</span> echo "For privacy questions, please email:"<br>
-              <span class="prompt">$</span> mailto <a href="#" data-contact-link><span data-contact-email>leaves0819@gmail.com</span></a>
-            </div>
+          <p>If you have privacy questions about Interna, contact:</p>
+          <div class="contact-card">
+            <p><strong data-developer-name>Dahon</strong></p>
+            <p>Email: <a href="#" data-contact-link><span data-contact-email>leaves0819@gmail.com</span></a></p>
           </div>
         </section>
       </main>
