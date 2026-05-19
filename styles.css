@@ -133,23 +133,9 @@ body {
   margin-bottom: 3rem;
 }
 
-.page-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.page-logo {
-  width: 72px;
-  height: 72px;
-  border-radius: 20px;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
-}
-
 .page-header h1 {
   font-family: var(--font-mono);
-  margin: 0;
+  margin: 0 0 1rem 0;
   font-size: 2.5rem;
   font-weight: 500;
 }
@@ -282,9 +268,6 @@ body {
   }
   .content-area {
     padding: 2rem;
-  }
-  .page-title {
-    align-items: flex-start;
   }
   .meta-info {
     flex-direction: column;
