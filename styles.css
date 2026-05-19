@@ -230,27 +230,40 @@ body {
   gap: 1rem;
 }
 
-.contact-card {
-  background-color: var(--panel-bg);
+.terminal-block {
+  background-color: var(--sidebar-bg);
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  padding: 1.25rem;
+  overflow: hidden;
+  font-family: var(--font-mono);
 }
 
-.contact-card p {
-  margin-bottom: 0.4rem;
+.terminal-header {
+  background-color: var(--panel-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
 }
 
-.contact-card p:last-child {
-  margin-bottom: 0;
+.terminal-body {
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
-.contact-card a {
+.prompt {
+  color: var(--success-color);
+  margin-right: 0.5rem;
+  user-select: none;
+}
+
+.terminal-body a {
   color: var(--accent-color);
   text-decoration: none;
 }
 
-.contact-card a:hover {
+.terminal-body a:hover {
   text-decoration: underline;
 }
 
