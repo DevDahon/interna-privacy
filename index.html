@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interna Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for Interna, the OJT management companion for students." />
+    <!-- Monospace font for developer console feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-name">> Interna_</span>
+          <span class="brand-sub">Privacy Policy</span>
+        </div>
+        <nav class="nav-menu" aria-label="Table of Contents">
+          <div class="nav-group">
+            <span class="nav-group-title">Overview</span>
+            <a href="#who-we-are" class="nav-link">1. Who we are</a>
+            <a href="#data-we-handle" class="nav-link">2. Data we handle</a>
+            <a href="#how-we-use-data" class="nav-link">3. How we use data</a>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-title">Services</span>
+            <a href="#ads-and-ai" class="nav-link">4. Ads, AI & 3rd Parties</a>
+            <a href="#device-trust" class="nav-link">5. Anti-abuse</a>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-title">Data Policies</span>
+            <a href="#retention" class="nav-link">6. Retention</a>
+            <a href="#your-choices" class="nav-link">7. Your choices</a>
+            <a href="#security" class="nav-link">8. Security</a>
+            <a href="#audience" class="nav-link">9. Audience</a>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-title">Support</span>
+            <a href="#contact" class="nav-link">10. Contact</a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="content-area">
+        <header class="page-header">
+          <h1>Privacy Policy</h1>
+          <div class="meta-info">
+            <span>[EFFECTIVE_DATE]: <strong data-effective-date>May 18, 2026</strong></span>
+            <span>[DEVELOPER]: <strong data-developer-name>Dahon</strong></span>
+          </div>
+        </header>
+
+        <section id="who-we-are" class="doc-section">
+          <h2>1. Who we are</h2>
+          <p>Interna is an OJT management companion designed for students. It helps users track work logs, attach documentation photos, export reports, and generate AI-assisted narrative reports.</p>
+          <p>Most day-to-day tracking features can be used offline. Internet access is mainly needed for AI generation, rewarded ads, and related backend protections. Interna is independently developed and maintained by <strong data-developer-name>Dahon</strong>.</p>
+        </section>
+
+        <section id="data-we-handle" class="doc-section">
+          <h2>2. What data Interna handles</h2>
+          <div class="data-grid">
+            <div class="data-card">
+              <h3>Profile and settings</h3>
+              <p>Interna stores user-entered profile details such as student name, course, school, company name, supervisor name, OJT date range, and required hours.</p>
+            </div>
+            <div class="data-card">
+              <h3>Work logs and saved reports</h3>
+              <p>Interna stores work logs, dates, time ranges, task descriptions, quantities, captions, and saved generated reports locally on the device.</p>
+            </div>
+            <div class="data-card">
+              <h3>Proof photos</h3>
+              <p>Interna can capture or select proof images for documentation. These images are stored and used locally on the device and are not uploaded in the normal app flow.</p>
+            </div>
+            <div class="data-card">
+              <h3>Technical and device data</h3>
+              <p>Interna and its integrated services may process install identifiers, device trust signals, app version details, Android-specific identifiers, diagnostics, and app interaction data needed for protected features.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-we-use-data" class="doc-section">
+          <h2>3. How data is used</h2>
+          <ul>
+            <li>To operate the app's OJT logging, reporting, and export features.</li>
+            <li>To support offline-first tracking with local device storage.</li>
+            <li>To generate AI narrative reports based on user-entered profile details and work-log content.</li>
+            <li>To provide rewarded-ad credits and enforce weekly generation limits.</li>
+            <li>To protect the app from automated abuse, reinstall abuse, and suspicious usage patterns.</li>
+            <li>To maintain app stability, diagnostics, and service reliability.</li>
+          </ul>
+        </section>
+
+        <section id="ads-and-ai" class="doc-section">
+          <h2>4. Ads, AI, and third-party services</h2>
+          <div class="service-list">
+            <div class="service-item">
+              <h3>Supabase</h3>
+              <p>Interna uses Supabase Edge Functions and related backend services for AI requests, reward-credit handling, and trust or quota enforcement.</p>
+            </div>
+            <div class="service-item">
+              <h3>OpenRouter and Google Gemini</h3>
+              <p>When AI narrative generation is used, prompt content may include user-entered profile details and work-log data so a narrative can be generated. These requests may be processed by OpenRouter or Google Gemini through the app's backend flow.</p>
+            </div>
+            <div class="service-item">
+              <h3>Google Mobile Ads (AdMob)</h3>
+              <p>Interna uses AdMob for rewarded ads. Depending on SDK behavior and Google's systems, this may involve diagnostics, app interaction data, device or other identifiers, and conservative approximate-location handling derived from network or SDK context. Interna does not provide a user-facing precise-location feature.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="device-trust" class="doc-section">
+          <h2>5. Device trust and anti-abuse protections</h2>
+          <p>Interna uses technical signals to reduce abuse of AI generation and rewarded credits. On supported Android builds, this may include Play Integrity verification, device-trust data, install identifiers, Android-specific identifiers, and request-specific trust metadata.</p>
+          <p>These protections are used to detect suspicious reinstall patterns, repeated abuse attempts, and invalid rewarded-credit claims. This system does not require account creation or login.</p>
+        </section>
+
+        <section id="retention" class="doc-section">
+          <h2>6. How long data is retained</h2>
+          <ul>
+            <li>Settings, logs, photos, and saved reports remain on-device until the user deletes them, uninstalls the app, clears app data, or replaces them through restore operations.</li>
+            <li>Backend reward, usage, and trust records may be retained for quota management, fraud prevention, diagnostics, and operational review.</li>
+            <li>AI request content may be processed by backend and AI service providers according to their operational and legal retention practices.</li>
+          </ul>
+        </section>
+
+        <section id="your-choices" class="doc-section">
+          <h2>7. Your controls and limitations</h2>
+          <p>Interna does not offer an account-based self-service deletion portal. Users can manage most local app data directly on their device by editing or deleting logs, removing local content, restoring backups, or uninstalling the app.</p>
+          <p>Users may also contact the privacy email listed below for privacy-related questions about the current app behavior.</p>
+        </section>
+
+        <section id="security" class="doc-section">
+          <h2>8. Security practices</h2>
+          <p>Interna uses encrypted network connections for supported backend, AI, and ad-related requests. As with any digital service, no system can guarantee absolute security, but reasonable technical measures are used to protect data in transit and limit abuse.</p>
+        </section>
+
+        <section id="audience" class="doc-section">
+          <h2>9. Children and educational use</h2>
+          <p>Interna is intended for students and educational or OJT-related use. It is not designed as a general children's app for young children. Institutions and users should review this policy before using the app in formal academic settings.</p>
+        </section>
+
+        <section id="contact" class="doc-section">
+          <h2>10. Privacy contact</h2>
+          <div class="terminal-block">
+            <div class="terminal-header">
+              <span>contact.sh</span>
+            </div>
+            <div class="terminal-body">
+              <span class="prompt">$</span> echo "For privacy questions, please email:"<br>
+              <span class="prompt">$</span> mailto <a href="#" data-contact-link><span data-contact-email>leaves0819@gmail.com</span></a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
