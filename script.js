@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  effectiveDate: "May 18, 2026",
+  effectiveDate: "May 23, 2026",
   contactEmail: "leaves0819@gmail.com",
   developerName: "Dahon",
 };

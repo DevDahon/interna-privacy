@@ -54,15 +54,15 @@
         <header class="page-header">
           <h1>Privacy Policy</h1>
           <div class="meta-info">
-            <span>[EFFECTIVE_DATE]: <strong data-effective-date>May 18, 2026</strong></span>
+            <span>[EFFECTIVE_DATE]: <strong data-effective-date>May 23, 2026</strong></span>
             <span>[DEVELOPER]: <strong data-developer-name>Dahon</strong></span>
           </div>
         </header>
 
         <section id="who-we-are" class="doc-section">
           <h2>1. Who we are</h2>
-          <p>Interna is an OJT management companion designed for students. It helps users track work logs, attach documentation photos, export reports, and generate AI-assisted narrative reports.</p>
-          <p>Most day-to-day tracking features can be used offline. Internet access is mainly needed for AI generation, rewarded ads, and related backend protections. Interna is independently developed and maintained by <strong data-developer-name>Dahon</strong>.</p>
+          <p>Interna is an OJT management companion designed for students. It helps users track work logs, attach documentation photos, export reports, and generate narrative reports with AI assistance when online.</p>
+          <p>Most day-to-day tracking features can be used offline. Internet access is mainly needed for AI generation attempts, rewarded ads, and related backend protections. If AI providers are unavailable, Interna may generate a structured on-device narrative instead of sending the request to another provider indefinitely. Interna is independently developed and maintained by <strong data-developer-name>Dahon</strong>.</p>
         </section>
 
         <section id="data-we-handle" class="doc-section">
@@ -74,7 +74,7 @@
             </div>
             <div class="data-card">
               <h3>Work logs and saved reports</h3>
-              <p>Interna stores work logs, dates, time ranges, task descriptions, quantities, captions, and saved generated reports locally on the device.</p>
+              <p>Interna stores work logs, dates, time ranges, task descriptions, quantities, captions, and saved narrative reports locally on the device.</p>
             </div>
             <div class="data-card">
               <h3>Proof photos</h3>
@@ -82,7 +82,7 @@
             </div>
             <div class="data-card">
               <h3>Technical and device data</h3>
-              <p>Interna and its integrated services may process install identifiers, device trust signals, app version details, Android-specific identifiers, diagnostics, and app interaction data needed for protected features.</p>
+              <p>Interna and its integrated services may process install identifiers, device trust signals, app version details, Android-specific identifiers, diagnostics, and app interaction data needed for protected AI and rewarded-ad features.</p>
             </div>
           </div>
         </section>
@@ -92,7 +92,7 @@
           <ul>
             <li>To operate the app's OJT logging, reporting, and export features.</li>
             <li>To support offline-first tracking with local device storage.</li>
-            <li>To generate AI narrative reports based on user-entered profile details and work-log content.</li>
+            <li>To generate AI narrative reports based on user-entered profile details and work-log content, and to fall back to an on-device narrative template when AI providers are unavailable.</li>
             <li>To provide rewarded-ad credits and enforce weekly generation limits.</li>
             <li>To protect the app from automated abuse, reinstall abuse, and suspicious usage patterns.</li>
             <li>To maintain app stability, diagnostics, and service reliability.</li>
@@ -107,8 +107,9 @@
               <p>Interna uses Supabase Edge Functions and related backend services for AI requests, reward-credit handling, and trust or quota enforcement.</p>
             </div>
             <div class="service-item">
-              <h3>OpenRouter and Google Gemini</h3>
-              <p>When AI narrative generation is used, prompt content may include user-entered profile details and work-log data so a narrative can be generated. These requests may be processed by OpenRouter or Google Gemini through the app's backend flow.</p>
+              <h3>Google Gemini, xAI Grok, and NVIDIA-hosted models</h3>
+              <p>When AI narrative generation is used, prompt content may include user-entered profile details and work-log data so a narrative can be generated. Depending on availability, requests may be processed through the app's backend using Google Gemini, xAI Grok, or NVIDIA-hosted AI models.</p>
+              <p>If those providers are unavailable, time out, or cannot serve the request, Interna may generate a structured on-device narrative fallback instead of returning no result.</p>
             </div>
             <div class="service-item">
               <h3>Google Mobile Ads (AdMob)</h3>
@@ -120,7 +121,7 @@
         <section id="device-trust" class="doc-section">
           <h2>5. Device trust and anti-abuse protections</h2>
           <p>Interna uses technical signals to reduce abuse of AI generation and rewarded credits. On supported Android builds, this may include Play Integrity verification, device-trust data, install identifiers, Android-specific identifiers, and request-specific trust metadata.</p>
-          <p>These protections are used to detect suspicious reinstall patterns, repeated abuse attempts, and invalid rewarded-credit claims. This system does not require account creation or login.</p>
+          <p>These protections are used to detect suspicious reinstall patterns, repeated abuse attempts, invalid rewarded-credit claims, and repeated AI usage attempts that exceed configured trust thresholds. This system does not require account creation or login.</p>
         </section>
 
         <section id="retention" class="doc-section">
@@ -129,12 +130,14 @@
             <li>Settings, logs, photos, and saved reports remain on-device until the user deletes them, uninstalls the app, clears app data, or replaces them through restore operations.</li>
             <li>Backend reward, usage, and trust records may be retained for quota management, fraud prevention, diagnostics, and operational review.</li>
             <li>AI request content may be processed by backend and AI service providers according to their operational and legal retention practices.</li>
+            <li>Backup and restore flows do not restore AI credits; AI credit state may be tracked separately from the local backup file.</li>
           </ul>
         </section>
 
         <section id="your-choices" class="doc-section">
           <h2>7. Your controls and limitations</h2>
           <p>Interna does not offer an account-based self-service deletion portal. Users can manage most local app data directly on their device by editing or deleting logs, removing local content, restoring backups, or uninstalling the app.</p>
+          <p>Because AI credits, backend trust decisions, and rewarded-credit usage are protected operational records, those records are not fully controlled through the app's local delete flows.</p>
           <p>Users may also contact the privacy email listed below for privacy-related questions about the current app behavior.</p>
         </section>
 
