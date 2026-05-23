@@ -63,7 +63,7 @@
         <section id="who-we-are" class="doc-section">
           <h2>1. Who we are</h2>
           <p>Interna is an OJT management companion designed for students. It helps users track work logs, attach documentation photos, export reports, and generate narrative reports with AI assistance when online.</p>
-          <p>Most day-to-day tracking features can be used offline. Internet access is mainly needed for AI generation attempts, rewarded ads, and related backend protections. If AI providers are unavailable, Interna may generate a structured on-device narrative instead of sending the request to another provider indefinitely. Interna is independently developed and maintained by <strong data-developer-name>Dahon</strong>.</p>
+          <p>Most day-to-day tracking features can be used offline. Internet access is mainly needed for AI generation attempts, rewarded ads, and related backend protections. Interna is independently developed and maintained by <strong data-developer-name>Dahon</strong>.</p>
         </section>
 
         <section id="data-we-handle" class="doc-section">
@@ -93,7 +93,7 @@
           <ul>
             <li>To operate the app's OJT logging, reporting, and export features.</li>
             <li>To support offline-first tracking with local device storage.</li>
-            <li>To generate AI narrative reports based on user-entered profile details and work-log content, and to fall back to an on-device narrative template when AI providers are unavailable.</li>
+            <li>To generate AI narrative reports based on user-entered profile details and work-log content.</li>
             <li>To provide rewarded-ad credits and enforce weekly generation limits.</li>
             <li>To protect the app from automated abuse, reinstall abuse, and suspicious usage patterns.</li>
             <li>To maintain app stability, diagnostics, and service reliability.</li>
@@ -110,7 +110,6 @@
             <div class="service-item">
               <h3>Google Gemini, xAI Grok, and NVIDIA-hosted models</h3>
               <p>When AI narrative generation is used, prompt content may include user-entered profile details and work-log data so a narrative can be generated. Depending on availability, requests may be processed through the app's backend using Google Gemini, xAI Grok, or NVIDIA-hosted AI models.</p>
-              <p>If those providers are unavailable, time out, or cannot serve the request, Interna may generate a structured on-device narrative fallback instead of returning no result.</p>
             </div>
             <div class="service-item">
               <h3>Google Mobile Ads (AdMob)</h3>
