@@ -16,10 +16,10 @@ Plain static privacy-policy website for Interna, independently maintained by Dah
    - `developerName` if needed
 2. Keep `index.html` aligned with the live app behavior, especially:
    - active AI providers
-   - on-device fallback narrative behavior
+   - weekly learning-note handling in AI narratives
    - rewarded-ad credit handling
    - anti-abuse / device-trust language
-   - backup and restore limitations for AI credits
+   - backup and restore limitations for AI credits and local reflection notes
 3. Host the folder on a public static host.
 4. Copy the final public URL into Interna using `EXPO_PUBLIC_PRIVACY_POLICY_URL`.
 
