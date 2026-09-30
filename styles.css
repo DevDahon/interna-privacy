@@ -169,9 +169,8 @@ button:focus-visible,
   height: 52px;
   overflow: hidden;
   flex: 0 0 auto;
-  border: 1px solid var(--border-strong);
   border-radius: 16px;
-  background: #08255c;
+  background: transparent;
   box-shadow: 0 10px 28px rgba(15, 84, 184, 0.25);
 }
 
