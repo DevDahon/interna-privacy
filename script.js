@@ -1,9 +1,10 @@
 const SITE_CONFIG = {
   effectiveDate: "August 30, 2026",
-  contactEmail: "devdahon@northeasterncollege.edu.ph",
-  developerName: "DevDahon",
+  contactEmail: "rodallenagregado19@gmail.com",
+  developerName: "Rod Allen Agregado",
   appVersion: "1.0.6",
-  portfolioUrl: "https://devdahon.github.io/",
+  portfolioUrl: "https://www.rodagregado.online/",
+  teamUrl: "https://iterablueprints.com/",
 };
 
 const THEME_STORAGE_KEY = "interna-privacy-theme";
